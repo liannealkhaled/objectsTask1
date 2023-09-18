@@ -2,20 +2,18 @@
 	Q1) Create an object called person with properties name, age, and city.
  Set appropriate values for these properties.
 ********************************/
-// let person = {
-//     name: `lianne`,
-//     age: 26,
-//     city: `kuwait`
-  
-// }
+let person = { 
+  name: `lianne`,
+  age: 26,
+  city: `kuwait`
+}
+
 
 /******************************
 	Q2) Add a new key email to the person object and assign it an email address.
 ********************************/
-
-// person.emailAddress = `liannealq@hotmail.com`
-// console.log (person)
-
+person.email = `liannealq@hotmail.com`
+console.log(person)
 /******************************
 	Q3) Write a JavaScript function called hasKey that takes two arguments:
  an object and a key. The function should return true if the object contains
@@ -23,27 +21,15 @@
  { name: 'John', age: 25 }, and the key is 'name', the function should return true,
  but if the key is 'city', it should return false.
 ********************************/
-// menawer answer : 
-// const p1 = {
-//     name: `john`
-//     age: 25
-// }
-// function hasKey (obj,key){
-// if (obj[key]) return true; else return false
-// }
-// hasKey(p1, `age`)
 
-// function hasKey(obj,key) { 
-//     if (Obj[key]) {return true}
-//     else {return false}
-// }
+let students =
+ { name:`john `, age: 25 }
 
-// hasKey(person.year)
+function hasKey (obj,key){ if (obj[key]){return true}else{return false}}
 
-// function haskey (obj,key){ 
-// console.log(obj.hasOwnProperty(key))} ;
+console.log(hasKey(students,`city`))
 
-// haskey(person,`year`)
+
 
 const movies = [
     {
@@ -82,38 +68,42 @@ const movies = [
   and iterates through it to log the titles of all the movies.
   ********************************/
   
-//   function printIt(x){console.log(x.title)}
+  function printIt(x){console.log(x.title)}
   
-//   movies.forEach(printIt)
+  movies.forEach(printIt)
 
   /******************************
       Q5) Create a function that accepts an array of objects called 'movies' 
   and iterates through it to count how many movies were released in the year 1994.
   ********************************/
   
-  function printIt(x) {
-    if ( x.year == 1994 ){ 
-        console.log (x.name)
-  }
 
+function movieLengths(movies){
+  const filtered = movies.filter(movie => movie.year === 1994).length ;
+  return filtered;
 }
-printIt(movies)
+console.log(movieLengths(movies));
 
-// menawer answer: 
+// // menawer answer: 
 // function filteryear (x){
 //     return x.year == 1994 
 // }
 // let filtered = movies.filter(filteryear).length 
-// // bc filter return an array 
+// // // bc filter return an array 
 // console.log (filtered)
 
 
-
-  
   /******************************
       Q6) Write a function that updates the genre of the movie "The Dark Knight"
    to "Action/Drama" and returns the modified array of movies.
   ********************************/
 
-  
-  
+
+
+
+   
+  //  function updateName(movies) {
+  //   movies[3].genre= "Action/Drama"
+  //   return movies
+  //  }
+  //  console.log(movies)
