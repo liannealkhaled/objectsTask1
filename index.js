@@ -2,18 +2,18 @@
 	Q1) Create an object called person with properties name, age, and city.
  Set appropriate values for these properties.
 ********************************/
-let person = { 
-  name: `lianne`,
-  age: 26,
-  city: `kuwait`
-}
+// let person = { 
+//   name: `lianne`,
+//   age: 26,
+//   city: `kuwait`
+// }
 
 
 /******************************
 	Q2) Add a new key email to the person object and assign it an email address.
 ********************************/
-person.email = `liannealq@hotmail.com`
-console.log(person)
+// person.email = `liannealq@hotmail.com`
+// console.log(person)
 /******************************
 	Q3) Write a JavaScript function called hasKey that takes two arguments:
  an object and a key. The function should return true if the object contains
@@ -22,12 +22,12 @@ console.log(person)
  but if the key is 'city', it should return false.
 ********************************/
 
-let students =
- { name:`john `, age: 25 }
+// let students =
+//  { name:`john `, age: 25 }
 
-function hasKey (obj,key){ if (obj[key]){return true}else{return false}}
+// function hasKey (obj,key){ if (obj[key]){return true}else{return false}}
 
-console.log(hasKey(students,`city`))
+// console.log(hasKey(students,`city`))
 
 
 
@@ -68,9 +68,9 @@ const movies = [
   and iterates through it to log the titles of all the movies.
   ********************************/
   
-  function printIt(x){console.log(x.title)}
+  // function printIt(x){console.log(x.title)}
   
-  movies.forEach(printIt)
+  // movies.forEach(printIt)
 
   /******************************
       Q5) Create a function that accepts an array of objects called 'movies' 
@@ -78,11 +78,11 @@ const movies = [
   ********************************/
   
 
-function movieLengths(movies){
-  const filtered = movies.filter(movie => movie.year === 1994).length ;
-  return filtered;
-}
-console.log(movieLengths(movies));
+// function movieLengths(movies){
+//   const filtered = movies.filter(movie => movie.year === 1994).length ;
+//   return filtered;
+// }
+// console.log(movieLengths(movies));
 
 // // menawer answer: 
 // function filteryear (x){
@@ -98,10 +98,16 @@ console.log(movieLengths(movies));
    to "Action/Drama" and returns the modified array of movies.
   ********************************/
 
+  // movies[3].genre= "Action/Drama" 
+
+  // console.log(movies)
 
 
 
-   
+
+//   updatedGenre(movies)
+// console.log(updatedGenre(movies))
+
   //  function updateName(movies) {
   //   movies[3].genre= "Action/Drama"
   //   return movies
