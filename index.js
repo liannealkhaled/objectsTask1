@@ -2,18 +2,20 @@
 	Q1) Create an object called person with properties name, age, and city.
  Set appropriate values for these properties.
 ********************************/
-// let person = { 
-//   name: `lianne`,
-//   age: 26,
-//   city: `kuwait`
-// }
+let person = { 
+  name: `lianne`,
+  age: 26,
+  city: `kuwait`
+
+}
+console.log(person)
 
 
 /******************************
 	Q2) Add a new key email to the person object and assign it an email address.
 ********************************/
-// person.email = `liannealq@hotmail.com`
-// console.log(person)
+person.email = `liannealq@hotmail.com`
+console.log(person)
 /******************************
 	Q3) Write a JavaScript function called hasKey that takes two arguments:
  an object and a key. The function should return true if the object contains
@@ -22,12 +24,18 @@
  but if the key is 'city', it should return false.
 ********************************/
 
-// let students =
-//  { name:`john `, age: 25 }
+let array = { name: 'John', age: 25 }
 
-// function hasKey (obj,key){ if (obj[key]){return true}else{return false}}
+function hasKey (obj,key) {
+  if (obj[key]) { return true} else {return false} 
+}
 
-// console.log(hasKey(students,`city`))
+// function hasKey (obj,key) {
+//   if (obj[key]) { return true} else {return `try again`} 
+// }
+console.log(hasKey(array,`city`))
+
+
 
 
 
@@ -67,16 +75,34 @@ const movies = [
       Q4) Create a function that accepts an array of objects called 'movies' 
   and iterates through it to log the titles of all the movies.
   ********************************/
-  
-  // function printIt(x){console.log(x.title)}
-  
-  // movies.forEach(printIt)
+
+// movies.filter( (movie)=>{console.log (movie.title)})
+
+// function printIt(x){console.log(x.title)}
+// movies.filter(printIt)
+
+// function printIt(x){console.log(x.title)}
+// movies.forEach(printIt)
+
+// function moviesTitle (movie) { console.log(movie.title)}
+// console.log (movies.forEach( moviesTitle))
+
+
+
 
   /******************************
       Q5) Create a function that accepts an array of objects called 'movies' 
   and iterates through it to count how many movies were released in the year 1994.
   ********************************/
   
+// let released = []
+// released = movies.map((movie)=>{if (movie.year == 1994) {return movie.name} } )
+
+
+// console.log (released.length)
+
+ 
+
 
 // function movieLengths(movies){
 //   const filtered = movies.filter(movie => movie.year === 1994).length ;
@@ -98,18 +124,10 @@ const movies = [
    to "Action/Drama" and returns the modified array of movies.
   ********************************/
 
-  // movies[3].genre= "Action/Drama" 
 
-  // console.log(movies)
+let x = movies.map( (movie)=>{if (movie.title == "The Dark Knight"){return movie.genre = "Action/Drama"}
+return movies} )
+
+console.log(x)
 
 
-
-
-//   updatedGenre(movies)
-// console.log(updatedGenre(movies))
-
-  //  function updateName(movies) {
-  //   movies[3].genre= "Action/Drama"
-  //   return movies
-  //  }
-  //  console.log(movies)
